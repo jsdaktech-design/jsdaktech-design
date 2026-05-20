@@ -67,6 +67,16 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
+  // Brand mark → smooth scroll to top of page (no URL hash residue)
+  const brandLink = document.querySelector(".brand");
+  if (brandLink) {
+    brandLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (history.replaceState) history.replaceState(null, "", window.location.pathname + window.location.search);
+    });
+  }
+
   // Scroll-spy: highlight nav link for the section currently in view
   const navLinks = document.querySelectorAll(".nav-links a[href^='#']");
   const sectionMap = new Map();
