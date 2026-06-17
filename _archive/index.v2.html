@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AIMargam — AI transformation for businesses</title>
+  <meta name="description" content="AIMargam Private Limited — AI transformation services for businesses. Twenty focused services, deep advisory, and platform partnerships from discovery to enterprise rollout." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =====================================================
+       Inline SVG sprite (one fetch, all icons)
+       ===================================================== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow-ur" viewBox="0 0 16 16">
+        <path d="M4 12 L12 4 M6 4 L12 4 L12 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 16 16">
+        <circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 11 L14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="i-plus" viewBox="0 0 16 16">
+        <path d="M8 3 V13 M3 8 H13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 16 16">
+        <path d="M4 4 L12 12 M12 4 L4 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 16 16">
+        <path d="M2 5 H14 M2 11 H14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="M5 12 L10 17 L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 16 16">
+        <path d="M3 4 C3 3 4 2 5 2 H6 L7.5 5 L6 6.5 C7 8.5 8.5 10 10.5 11 L12 9.5 L15 11 V12 C15 13 14 14 13 14 C7 14 3 10 3 4 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 16 16">
+        <rect x="2" y="4" width="12" height="9" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M2 5 L8 9.5 L14 5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      </symbol>
+      <symbol id="i-web" viewBox="0 0 16 16">
+        <circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <ellipse cx="8" cy="8" rx="3" ry="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M2 8 H14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 16 16">
+        <path d="M8 14 C8 14 13 9.5 13 6 A5 5 0 0 0 3 6 C3 9.5 8 14 8 14 Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        <circle cx="8" cy="6" r="1.7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      </symbol>
+      <symbol id="i-brain" viewBox="0 0 24 24">
+        <path d="M9 4 A3 3 0 0 0 6 7 A2.5 2.5 0 0 0 4 9.5 A2.5 2.5 0 0 0 5 11.5 A2.5 2.5 0 0 0 4 13.5 A3 3 0 0 0 7 16.5 V18 A3 3 0 0 0 12 20 V4 A3 3 0 0 0 9 4 Z M15 4 A3 3 0 0 1 18 7 A2.5 2.5 0 0 1 20 9.5 A2.5 2.5 0 0 1 19 11.5 A2.5 2.5 0 0 1 20 13.5 A3 3 0 0 1 17 16.5 V18 A3 3 0 0 1 12 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24">
+        <path d="M4 19 H20 M4 16 L9 11 L13 14 L20 6 M15 6 L20 6 L20 11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-rupee" viewBox="0 0 24 24">
+        <path d="M7 6 H17 M7 10 H17 M7 6 C13 6 14 14 7 14 L14 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-leaf" viewBox="0 0 24 24">
+        <path d="M5 19 C5 11 11 5 19 5 C19 13 13 19 5 19 Z M5 19 L12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-mark" viewBox="0 0 32 32">
+        <path d="M8 24 L16 8 L24 24 M11 19 H21 M21 13 L27 7 M23 7 L27 7 L27 11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- =====================================================
+       Navigation
+       ===================================================== -->
+  <nav class="nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark"><svg><use href="#i-mark"/></svg></span>
+        <span class="brand-text">
+          <span class="name">AIMargam</span>
+          <span class="sub">AI-based transformation</span>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#support">Support</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-cta" data-book="true">
+        Book a consultation
+        <span class="arrow">→</span>
+      </button>
+      <button class="nav-mobile-toggle" aria-label="Open menu"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu drawer -->
+  <div class="mobile-menu">
+    <button class="mobile-close" aria-label="Close menu"><svg style="width:16px;height:16px"><use href="#i-close"/></svg></button>
+    <a href="#services">Services</a>
+    <a href="#approach">Approach</a>
+    <a href="#support">Support</a>
+    <a href="#contact">Contact</a>
+    <button class="cta" data-book="true">Book a consultation</button>
+  </div>
+
+  <!-- =====================================================
+       Hero
+       ===================================================== -->
+  <header class="hero">
+    <div class="shell">
+      <div class="hero-eyebrow reveal">AIMargam · Innovating today</div>
+      <h1 class="reveal" data-delay="1"><span class="accent">AI</span> isn't the destination. <span class="accent-gold">Margam</span> is the way.</h1>
+      <div class="hero-ctas reveal" data-delay="3">
+        <button class="btn btn-primary" data-book="true">Book a consultation <span class="arrow">→</span></button>
+        <a class="btn btn-ghost" href="#services">Browse services</a>
+      </div>
+
+      <div class="hero-stats reveal" data-delay="4">
+        <div class="stat">
+          <div class="k">Core services</div>
+          <div class="v"><span data-count="20">20</span></div>
+        </div>
+        <div class="stat">
+          <div class="k">Support offerings</div>
+          <div class="v"><span data-count="10">10</span></div>
+        </div>
+        <div class="stat">
+          <div class="k">Engagement range</div>
+          <div class="v">Days <small>→</small> 18 mo</div>
+        </div>
+        <div class="stat">
+          <div class="k">Sectors covered</div>
+          <div class="v">Industry<small>-wide</small></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       Outcomes
+       ===================================================== -->
+  <section class="section">
+    <div class="shell">
+      <div class="sec-head">
+        <div class="reveal">
+          <div class="sec-eyebrow">What you can expect</div>
+          <h2>Four outcomes we measure every engagement against.</h2>
+        </div>
+        <p class="blurb reveal" data-delay="1">Every service in the catalog rolls up to one or more of these. We design engagements around outcomes, not deliverables.</p>
+      </div>
+
+      <div class="outcomes reveal">
+        <div class="outcome">
+          <span class="outcome-num">01</span>
+          <div class="outcome-glyph"><svg width="22" height="22"><use href="#i-brain"/></svg></div>
+          <h3>Smarter decisions</h3>
+          <p>Data, models, and dashboards that turn instinct into evidence — and surface decisions worth making.</p>
+        </div>
+        <div class="outcome">
+          <span class="outcome-num">02</span>
+          <div class="outcome-glyph"><svg width="22" height="22"><use href="#i-chart"/></svg></div>
+          <h3>Higher efficiency</h3>
+          <p>Automation across the workflows that take up the most time — without breaking what already works.</p>
+        </div>
+        <div class="outcome">
+          <span class="outcome-num">03</span>
+          <div class="outcome-glyph"><svg width="22" height="22"><use href="#i-rupee"/></svg></div>
+          <h3>Lower costs</h3>
+          <p>AI that pays for itself through measurable operational lift, not novelty pilots that never scale.</p>
+        </div>
+        <div class="outcome">
+          <span class="outcome-num">04</span>
+          <div class="outcome-glyph"><svg width="22" height="22"><use href="#i-leaf"/></svg></div>
+          <h3>Sustainable growth</h3>
+          <p>Capability built in-house, not dependency built in. Your team owns what we leave behind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       Services catalog
+       ===================================================== -->
+  <section class="section" id="services" style="padding-top:0">
+    <div class="shell">
+      <div class="sec-head">
+        <div class="reveal">
+          <div class="sec-eyebrow">The catalog</div>
+          <h2>Twenty services to transform your business.</h2>
+        </div>
+        <p class="blurb reveal" data-delay="1">Filter by category, engagement length, or search by what you're trying to solve. Click any row for scope, deliverables, and how the engagement runs.</p>
+      </div>
+
+      <div class="filters reveal">
+        <div class="filter-row">
+          <div class="filter-label">Category</div>
+          <button class="chip" data-filter="cat" data-value="strategy">Strategy <span class="count">2</span></button>
+          <button class="chip" data-filter="cat" data-value="training">Training <span class="count">3</span></button>
+          <button class="chip" data-filter="cat" data-value="automation">Automation <span class="count">5</span></button>
+          <button class="chip" data-filter="cat" data-value="analytics">Analytics <span class="count">3</span></button>
+          <button class="chip" data-filter="cat" data-value="industrial">Industrial <span class="count">2</span></button>
+          <button class="chip" data-filter="cat" data-value="enterprise">Enterprise <span class="count">5</span></button>
+        </div>
+        <div class="filter-row">
+          <div class="filter-label">Duration</div>
+          <button class="chip" data-filter="dur" data-value="days">Days</button>
+          <button class="chip" data-filter="dur" data-value="weeks">Weeks</button>
+          <button class="chip" data-filter="dur" data-value="short">1–3 Months</button>
+          <button class="chip" data-filter="dur" data-value="long">3+ Months</button>
+          <div class="search-wrap">
+            <svg class="search-icon"><use href="#i-search"/></svg>
+            <input id="service-search" type="search" placeholder="Search services…" autocomplete="off" />
+          </div>
+        </div>
+      </div>
+
+      <div class="results-meta">
+        <span id="results-count">20 of 20 services</span>
+        <button id="clear-filters" style="display:none">Clear filters</button>
+      </div>
+
+      <div class="service-list">
+
+        <!-- 01 -->
+        <article class="service" data-cat="strategy" data-dur="3–5 Days" data-search="ai readiness assessment business processes opportunities consultation roadmap">
+          <div class="service-head">
+            <div class="service-num">01</div>
+            <div class="service-title">
+              <div class="name">AI Readiness Assessment</div>
+              <div class="scope">Analyze current business processes and identify AI opportunities.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#1F3A8A">Strategy</div>
+            <div class="service-dur">3–5 Days</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">A structured audit of your operations, data, and tooling. We map where AI fits and where it doesn't, with a prioritized roadmap of opportunities and risks.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Discovery interviews</li><li>Opportunity heatmap</li><li>Phased adoption plan</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">3–5 Days</div>
+                <button class="btn btn-accent" data-book="AI Readiness Assessment">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 -->
+        <article class="service" data-cat="training" data-dur="1–2 Days" data-search="ai awareness workshop adoption training teams management trainer certificates">
+          <div class="service-head">
+            <div class="service-num">02</div>
+            <div class="service-title">
+              <div class="name">AI Awareness Workshop</div>
+              <div class="scope">Basic AI adoption training for teams and management.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#2C68C5">Training</div>
+            <div class="service-dur">1–2 Days</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Hands-on sessions that demystify AI for non-technical teams. Covers core concepts, real use cases, and the working vocabulary leaders need to make decisions.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Live workshop</li><li>Take-home playbook</li><li>Participation certificates</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">1–2 Days</div>
+                <button class="btn btn-accent" data-book="AI Awareness Workshop">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 -->
+        <article class="service" data-cat="training" data-dur="1–3 Days" data-search="chatgpt business training productivity automation genai tools prompts">
+          <div class="service-head">
+            <div class="service-num">03</div>
+            <div class="service-title">
+              <div class="name">ChatGPT for Business Training</div>
+              <div class="scope">Productivity and automation using GenAI tools.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#2C68C5">Training</div>
+            <div class="service-dur">1–3 Days</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Practical training for using generative AI inside real workflows — drafting, analysis, customer comms, and content. Includes prompt libraries built for your team.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Role-based modules</li><li>Prompt library</li><li>Workflow templates</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">1–3 Days</div>
+                <button class="btn btn-accent" data-book="ChatGPT for Business Training">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 -->
+        <article class="service" data-cat="strategy" data-dur="1–2 Weeks" data-search="ai policy governance ethics compliance documentation advisory">
+          <div class="service-head">
+            <div class="service-num">04</div>
+            <div class="service-title">
+              <div class="name">AI Policy &amp; Governance Setup</div>
+              <div class="scope">AI usage policies, ethics, and compliance guidance.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#1F3A8A">Strategy</div>
+            <div class="service-dur">1–2 Weeks</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Governance frameworks that keep AI use safe, compliant, and auditable. Covers data handling, model risk, and acceptable-use policies for staff and vendors.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Policy documents</li><li>Risk register</li><li>Review cadence</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">1–2 Weeks</div>
+                <button class="btn btn-accent" data-book="AI Policy &amp; Governance Setup">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05 -->
+        <article class="service" data-cat="automation" data-dur="2–4 Weeks" data-search="ai powered website chatbot customer support integration deployment">
+          <div class="service-head">
+            <div class="service-num">05</div>
+            <div class="service-title">
+              <div class="name">AI-Powered Website Chatbot</div>
+              <div class="scope">Customer support chatbot integration.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#3F8BBC">Automation</div>
+            <div class="service-dur">2–4 Weeks</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">A grounded chatbot trained on your knowledge base. Handles tier-one support and lead capture, with handoff paths to humans when needed.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Knowledge ingestion</li><li>Conversation flows</li><li>Analytics dashboard</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">2–4 Weeks</div>
+                <button class="btn btn-accent" data-book="AI-Powered Website Chatbot">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 06 -->
+        <article class="service" data-cat="automation" data-dur="2–3 Weeks" data-search="social media ai automation content generation scheduling brand voice">
+          <div class="service-head">
+            <div class="service-num">06</div>
+            <div class="service-title">
+              <div class="name">Social Media AI Automation</div>
+              <div class="scope">AI-assisted content generation and scheduling.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#3F8BBC">Automation</div>
+            <div class="service-dur">2–3 Weeks</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">An end-to-end content engine: ideation, drafting, scheduling, and performance review. Tuned to your brand voice and posting cadence.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Brand voice tuning</li><li>Editorial workflow</li><li>Scheduler integration</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">2–3 Weeks</div>
+                <button class="btn btn-accent" data-book="Social Media AI Automation">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 07 -->
+        <article class="service" data-cat="automation" data-dur="3–6 Weeks" data-search="ai resume screening hr candidate filtering shortlist reviewer">
+          <div class="service-head">
+            <div class="service-num">07</div>
+            <div class="service-title">
+              <div class="name">AI Resume Screening System</div>
+              <div class="scope">Automated HR candidate filtering solution.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#3F8BBC">Automation</div>
+            <div class="service-dur">3–6 Weeks</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Cuts time-to-shortlist by ranking applicants against role criteria. Designed with explainability so HR can defend every decision.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Role rubrics</li><li>Screening pipeline</li><li>Reviewer console</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">3–6 Weeks</div>
+                <button class="btn btn-accent" data-book="AI Resume Screening System">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 08 -->
+        <article class="service" data-cat="analytics" data-dur="1–2 Months" data-search="ai attendance analytics dashboard workforce computer vision">
+          <div class="service-head">
+            <div class="service-num">08</div>
+            <div class="service-title">
+              <div class="name">AI Attendance &amp; Analytics System</div>
+              <div class="scope">Smart attendance with analytics dashboard.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#2C4FC5">Analytics</div>
+            <div class="service-dur">1–2 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Computer-vision attendance with workforce analytics layered on top — patterns, anomalies, and a live dashboard for ops and HR.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>On-site install</li><li>Dashboard rollout</li><li>Admin training</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">1–2 Months</div>
+                <button class="btn btn-accent" data-book="AI Attendance &amp; Analytics System">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 09 -->
+        <article class="service" data-cat="analytics" data-dur="1–2 Months" data-search="ai sales prediction dashboard forecasting pipeline revenue">
+          <div class="service-head">
+            <div class="service-num">09</div>
+            <div class="service-title">
+              <div class="name">AI Sales Prediction Dashboard</div>
+              <div class="scope">Predictive analytics for sales forecasting.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#2C4FC5">Analytics</div>
+            <div class="service-dur">1–2 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Forecasts that adjust to seasonality, pipeline health, and rep activity. Built so revenue leaders can interrogate the model, not just trust it.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Data integration</li><li>Forecast model</li><li>Sales dashboards</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">1–2 Months</div>
+                <button class="btn btn-accent" data-book="AI Sales Prediction Dashboard">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="service" data-cat="automation" data-dur="1–3 Months" data-search="ai customer support automation ticketing helpdesk routing csat">
+          <div class="service-head">
+            <div class="service-num">10</div>
+            <div class="service-title">
+              <div class="name">AI Customer Support Automation</div>
+              <div class="scope">Automated ticketing and support system.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#3F8BBC">Automation</div>
+            <div class="service-dur">1–3 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Routing, triage, draft replies, and resolution suggestions, embedded in your existing helpdesk. Measurable lift on first-response and CSAT.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Helpdesk connectors</li><li>Triage models</li><li>Quality reporting</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">1–3 Months</div>
+                <button class="btn btn-accent" data-book="AI Customer Support Automation">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11 -->
+        <article class="service" data-cat="automation" data-dur="1–2 Months" data-search="ai digital marketing automation lead generation campaign optimization attribution">
+          <div class="service-head">
+            <div class="service-num">11</div>
+            <div class="service-title">
+              <div class="name">AI Digital Marketing Automation</div>
+              <div class="scope">AI-driven lead generation and campaign optimization.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#3F8BBC">Automation</div>
+            <div class="service-dur">1–2 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Targeting, creative variants, and bid logic informed by your CRM. Campaigns get smarter every cycle without manual tuning.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Audience modeling</li><li>Creative pipeline</li><li>Attribution stack</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">1–2 Months</div>
+                <button class="btn btn-accent" data-book="AI Digital Marketing Automation">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12 -->
+        <article class="service" data-cat="enterprise" data-dur="2–4 Months" data-search="ai erp integration workflow procurement finance inventory">
+          <div class="service-head">
+            <div class="service-num">12</div>
+            <div class="service-title">
+              <div class="name">AI ERP Integration</div>
+              <div class="scope">AI integration into ERP and workflow systems.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#16265E">Enterprise</div>
+            <div class="service-dur">2–4 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Bring AI into the core of operations — procurement, finance, inventory. Includes safe rollout patterns that respect existing approvals and controls.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>System mapping</li><li>Integration build</li><li>Change management</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">2–4 Months</div>
+                <button class="btn btn-accent" data-book="AI ERP Integration">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 13 -->
+        <article class="service" data-cat="industrial" data-dur="2–6 Months" data-search="ai predictive maintenance industrial equipment sensors downtime">
+          <div class="service-head">
+            <div class="service-num">13</div>
+            <div class="service-title">
+              <div class="name">AI-Based Predictive Maintenance</div>
+              <div class="scope">Industrial equipment monitoring and prediction.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#5C6B8A">Industrial</div>
+            <div class="service-dur">2–6 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Sensor-driven failure prediction for plants and fleets. Reduces unplanned downtime and lets maintenance teams plan, not react.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Sensor deployment</li><li>Predictive models</li><li>Maintenance dashboards</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">2–6 Months</div>
+                <button class="btn btn-accent" data-book="AI-Based Predictive Maintenance">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 14 -->
+        <article class="service" data-cat="industrial" data-dur="2–5 Months" data-search="ai vision inspection computer vision quality defect cameras">
+          <div class="service-head">
+            <div class="service-num">14</div>
+            <div class="service-title">
+              <div class="name">AI Vision Inspection System</div>
+              <div class="scope">Computer vision for quality inspection.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#5C6B8A">Industrial</div>
+            <div class="service-dur">2–5 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Vision systems that catch defects faster and more consistently than manual QC. Tuned to your line, your lighting, your tolerance bands.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Line-side cameras</li><li>Defect models</li><li>QA reporting</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">2–5 Months</div>
+                <button class="btn btn-accent" data-book="AI Vision Inspection System">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 15 -->
+        <article class="service" data-cat="analytics" data-dur="2–4 Months" data-search="ai data analytics center business intelligence platform dashboards warehouse">
+          <div class="service-head">
+            <div class="service-num">15</div>
+            <div class="service-title">
+              <div class="name">AI Data Analytics Center</div>
+              <div class="scope">Business intelligence and analytics platform.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#2C4FC5">Analytics</div>
+            <div class="service-dur">2–4 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">A central analytics layer for the business — a single source of truth with self-serve dashboards for every function.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Data warehouse</li><li>Semantic layer</li><li>Self-serve BI</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">2–4 Months</div>
+                <button class="btn btn-accent" data-book="AI Data Analytics Center">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 16 -->
+        <article class="service" data-cat="enterprise" data-dur="3–12 Months" data-search="corporate ai transformation program enterprise-wide adoption strategy executive">
+          <div class="service-head">
+            <div class="service-num">16</div>
+            <div class="service-title">
+              <div class="name">Corporate AI Transformation Program</div>
+              <div class="scope">Enterprise-wide AI adoption strategy.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#16265E">Enterprise</div>
+            <div class="service-dur">3–12 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">A multi-quarter program that aligns leadership, builds capability, and ships AI into the lines of business that move the P&amp;L.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Executive alignment</li><li>Capability build</li><li>Portfolio of pilots</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">3–12 Months</div>
+                <button class="btn btn-accent" data-book="Corporate AI Transformation Program">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 17 -->
+        <article class="service" data-cat="enterprise" data-dur="4–12 Months" data-search="ai center of excellence setup lab innovation operating model platform hiring">
+          <div class="service-head">
+            <div class="service-num">17</div>
+            <div class="service-title">
+              <div class="name">AI Center of Excellence Setup</div>
+              <div class="scope">Establish an AI lab and innovation center.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#16265E">Enterprise</div>
+            <div class="service-dur">4–12 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Stand up an internal CoE that becomes the engine for AI work across the company — with the right people, platforms, and operating cadence.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Operating model</li><li>Platform blueprint</li><li>Hiring playbook</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">4–12 Months</div>
+                <button class="btn btn-accent" data-book="AI Center of Excellence Setup">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 18 -->
+        <article class="service" data-cat="training" data-dur="2–8 Months" data-search="ai skill development academy upskilling lms certification curricula">
+          <div class="service-head">
+            <div class="service-num">18</div>
+            <div class="service-title">
+              <div class="name">AI Skill Development Academy</div>
+              <div class="scope">Customized employee AI upskilling ecosystem.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#2C68C5">Training</div>
+            <div class="service-dur">2–8 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">A curated learning track for every role — from analysts to executives — delivered through your LMS, with certifications that matter.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Role-based curricula</li><li>LMS setup</li><li>Certification program</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">2–8 Months</div>
+                <button class="btn btn-accent" data-book="AI Skill Development Academy">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 19 -->
+        <article class="service" data-cat="enterprise" data-dur="3–9 Months" data-search="custom generative ai platform gpt llm private grounding enterprise">
+          <div class="service-head">
+            <div class="service-num">19</div>
+            <div class="service-title">
+              <div class="name">Custom Generative AI Platform</div>
+              <div class="scope">Enterprise GPT / LLM solution for business.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#16265E">Enterprise</div>
+            <div class="service-dur">3–9 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Your own grounded GenAI environment — private, governed, and connected to internal knowledge. Built so non-technical teams can actually use it.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Private deployment</li><li>Knowledge grounding</li><li>App layer</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">3–9 Months</div>
+                <button class="btn btn-accent" data-book="Custom Generative AI Platform">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 20 -->
+        <article class="service" data-cat="enterprise" data-dur="6–18 Months" data-search="end to end industry ai transformation digital strategy implementation">
+          <div class="service-head">
+            <div class="service-num">20</div>
+            <div class="service-title">
+              <div class="name">End-to-End Industry AI Transformation</div>
+              <div class="scope">Complete AI-driven digital transformation.</div>
+            </div>
+            <div class="service-cat" style="--cat-color:#16265E">Enterprise</div>
+            <div class="service-dur">6–18 Months</div>
+            <div class="service-chev"><svg width="14" height="14"><use href="#i-plus"/></svg></div>
+          </div>
+          <div class="service-body">
+            <div class="service-body-inner">
+              <div class="detail-block">
+                <div class="k">What it is</div>
+                <div class="v">Our most comprehensive engagement — strategy through execution. Every layer of the business is rethought around AI, with us alongside for the journey.</div>
+              </div>
+              <div class="detail-block">
+                <div class="k">Deliverables</div>
+                <ul class="v"><li>Transformation roadmap</li><li>Cross-functional delivery</li><li>Sustained partnership</li></ul>
+              </div>
+              <div class="detail-actions">
+                <div class="timeline-pill">6–18 Months</div>
+                <button class="btn btn-accent" data-book="End-to-End Industry AI Transformation">Discuss this <span class="arrow">→</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="empty-state" style="display:none; margin-top:24px">
+        <div class="big">No services match that combination.</div>
+        <div>Try removing a filter, or <button id="clear-empty" onclick="document.getElementById('clear-filters').click()" style="background:none;border:0;color:var(--accent);text-decoration:underline;cursor:pointer;font:inherit">clear all</button>.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       Approach
+       ===================================================== -->
+  <section class="section" id="approach" style="padding-top:0">
+    <div class="shell">
+      <div class="sec-head">
+        <div class="reveal">
+          <div class="sec-eyebrow">How we work</div>
+          <h2>An approach built around your business, not ours.</h2>
+        </div>
+        <p class="blurb reveal" data-delay="1">Every engagement runs through the same four-step rhythm. Listen first, then move with intent.</p>
+      </div>
+      <div class="process reveal">
+        <div class="process-step">
+          <div class="n">01 — Listen</div>
+          <h3>Understand</h3>
+          <p>We start with your problem in your language. No frameworks pushed before context.</p>
+        </div>
+        <div class="process-step">
+          <div class="n">02 — Map</div>
+          <h3>Design</h3>
+          <p>We trace the work end-to-end and locate where AI removes friction without breaking what already works.</p>
+        </div>
+        <div class="process-step">
+          <div class="n">03 — Pilot</div>
+          <h3>Prove</h3>
+          <p>Small, scoped, measurable. We ship something real and learn from it before scaling.</p>
+        </div>
+        <div class="process-step">
+          <div class="n">04 — Scale</div>
+          <h3>Embed</h3>
+          <p>Adoption that lasts: training, governance, and the operating model around the technology.</p>
+        </div>
+      </div>
+
+      <div class="industries">
+        <span class="industry-tag">Manufacturing</span>
+        <span class="industry-tag">Retail &amp; eCommerce</span>
+        <span class="industry-tag">Financial Services</span>
+        <span class="industry-tag">Healthcare</span>
+        <span class="industry-tag">Education</span>
+        <span class="industry-tag">Logistics</span>
+        <span class="industry-tag">Professional Services</span>
+        <span class="industry-tag">SaaS &amp; Technology</span>
+        <span class="industry-tag">Public Sector</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       Support add-ons
+       ===================================================== -->
+  <section class="section" id="support" style="padding-top:0">
+    <div class="shell">
+      <div class="sec-head">
+        <div class="reveal">
+          <div class="sec-eyebrow">Beyond the catalog</div>
+          <h2>Additional support AIMargam can offer.</h2>
+        </div>
+        <p class="blurb reveal" data-delay="1">Wraparound capabilities that complement the core catalog — advisory, academic partnership, security, ongoing care.</p>
+      </div>
+
+      <div class="support-grid reveal">
+        <div class="support-card"><span class="support-num">01</span><h4>AI Strategy Consulting</h4><p>Executive advisory on AI direction, prioritization, and trade-offs.</p></div>
+        <div class="support-card"><span class="support-num">02</span><h4>Faculty Development Programs</h4><p>Educator training so academic institutions can teach modern AI.</p></div>
+        <div class="support-card"><span class="support-num">03</span><h4>Internship &amp; Industry Collaboration</h4><p>Structured programs that connect students with real AI work.</p></div>
+        <div class="support-card"><span class="support-num">04</span><h4>AI Certification Programs</h4><p>Recognized, role-aligned certifications across the AI stack.</p></div>
+        <div class="support-card"><span class="support-num">05</span><h4>Annual Maintenance &amp; Technical Support</h4><p>Ongoing care for deployed AI systems — SLAs, updates, fixes.</p></div>
+        <div class="support-card"><span class="support-num">06</span><h4>Cloud Deployment Assistance</h4><p>Architecture and rollout help across major cloud providers.</p></div>
+        <div class="support-card"><span class="support-num">07</span><h4>Data Security Guidance</h4><p>Reviews and patterns to keep AI data and models secure.</p></div>
+        <div class="support-card"><span class="support-num">08</span><h4>Startup &amp; Innovation Mentorship</h4><p>Hands-on mentorship for founders building in AI.</p></div>
+        <div class="support-card"><span class="support-num">09</span><h4>Customized Corporate Training</h4><p>Bespoke programs designed around the work your teams actually do.</p></div>
+        <div class="support-card"><span class="support-num">10</span><h4>AI R&amp;D Collaboration</h4><p>Joint research with industry and academic partners.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       CTA + Contact
+       ===================================================== -->
+  <section class="cta-band" id="contact">
+    <div class="shell">
+      <div class="cta-inner">
+        <div class="reveal">
+          <h2>Let's build your<br /><span class="accent">AI-powered future.</span></h2>
+          <p class="cta-tag">Explore. Transform. Succeed.</p>
+          <div class="cta-actions">
+            <button class="btn btn-primary" data-book="true">Book a consultation <span class="arrow">→</span></button>
+            <a class="btn btn-ghost" href="mailto:dinesh.praveen.d@gmail.com">Email us directly</a>
+          </div>
+        </div>
+        <div class="contact-card reveal" data-delay="1">
+          <div class="contact-row" data-copy="8939659911">
+            <div class="ic"><svg><use href="#i-phone"/></svg></div>
+            <div>
+              <div class="label">Phone</div>
+              <div class="val">+91 89396 59911</div>
+            </div>
+          </div>
+          <div class="contact-row" data-copy="dinesh.praveen.d@gmail.com">
+            <div class="ic"><svg><use href="#i-mail"/></svg></div>
+            <div>
+              <div class="label">Email</div>
+              <div class="val">dinesh.praveen.d@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-row" data-copy="www.aimargam.com">
+            <div class="ic"><svg><use href="#i-web"/></svg></div>
+            <div>
+              <div class="label">Web</div>
+              <div class="val">www.aimargam.com</div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="ic"><svg><use href="#i-pin"/></svg></div>
+            <div>
+              <div class="label">Company</div>
+              <div class="val">AIMargam Private Limited</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       Footer
+       ===================================================== -->
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <div>© AIMargam Private Limited. Innovating today, transforming tomorrow.</div>
+      <div class="footer-meta">aimargam.com</div>
+    </div>
+  </footer>
+
+  <!-- =====================================================
+       Booking modal
+       ===================================================== -->
+  <div class="modal-back" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close"><svg width="14" height="14"><use href="#i-close"/></svg></button>
+
+      <div class="modal-intro">
+        <h3 id="modal-title">Book a consultation</h3>
+        <p class="sub">Tell us a little about what you're trying to do. We'll come back within one working day.</p>
+      </div>
+
+      <form class="modal-form" novalidate>
+        <div class="field">
+          <label for="f-name">Name</label>
+          <input id="f-name" name="name" type="text" required placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="f-company">Company</label>
+          <input id="f-company" name="company" type="text" placeholder="Organization" />
+        </div>
+        <div class="field full">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" required placeholder="you@company.com" />
+        </div>
+        <div class="field full">
+          <label for="f-interest">Service of interest</label>
+          <select id="f-interest" name="interest">
+            <option value="">Not sure yet — let's discuss</option>
+            <option>AI Readiness Assessment</option>
+            <option>AI Awareness Workshop</option>
+            <option>ChatGPT for Business Training</option>
+            <option>AI Policy &amp; Governance Setup</option>
+            <option>AI-Powered Website Chatbot</option>
+            <option>Social Media AI Automation</option>
+            <option>AI Resume Screening System</option>
+            <option>AI Attendance &amp; Analytics System</option>
+            <option>AI Sales Prediction Dashboard</option>
+            <option>AI Customer Support Automation</option>
+            <option>AI Digital Marketing Automation</option>
+            <option>AI ERP Integration</option>
+            <option>AI-Based Predictive Maintenance</option>
+            <option>AI Vision Inspection System</option>
+            <option>AI Data Analytics Center</option>
+            <option>Corporate AI Transformation Program</option>
+            <option>AI Center of Excellence Setup</option>
+            <option>AI Skill Development Academy</option>
+            <option>Custom Generative AI Platform</option>
+            <option>End-to-End Industry AI Transformation</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="f-note">What you'd like to discuss</label>
+          <textarea id="f-note" name="note" placeholder="Optional — a few lines of context."></textarea>
+        </div>
+        <div class="modal-foot full">
+          <button type="button" class="btn btn-ghost modal-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary">Request consultation <span class="arrow">→</span></button>
+        </div>
+      </form>
+
+      <div class="success" style="display:none">
+        <div class="check"><svg><use href="#i-check"/></svg></div>
+        <h3>Thank you<span class="success-name"></span>.</h3>
+        <p class="sub" style="max-width:36ch;margin:8px auto 24px">We've noted your interest<span class="success-interest"></span>. Someone from the team will reach out within one working day.</p>
+        <button class="btn btn-primary modal-cancel">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
