@@ -13,7 +13,7 @@
   <meta property="og:image" content="assets/aimargam-logo.jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -39,12 +39,14 @@
   <!-- ═══ NAV ═══ -->
   <nav class="nav">
     <div class="nav-row">
-      <a class="brand" href="#top">
-        <img src="assets/aimargam-logo.jpeg" alt="AIMargam Private Limited" width="70" height="50" decoding="async" fetchpriority="high" />
+      <a class="brand" href="#top" aria-label="AIMargam Private Limited — home">
+        <span class="brand-chip"><img src="assets/aimargam-mark.png" alt="" width="34" height="29" decoding="async" fetchpriority="high" /></span>
+        <span class="brand-word">AIMARGAM<small>Private Limited</small></span>
       </a>
       <div class="nav-links">
         <a href="#top">Home</a>
         <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
         <a href="#contact">Contact</a>
       </div>
       <a class="nav-cta" href="#contact">Get in Touch</a>
@@ -61,6 +63,7 @@
     </button>
     <a href="#top">Home</a>
     <a href="#services">Services</a>
+    <a href="#approach">Approach</a>
     <a href="#contact">Contact</a>
     <a class="d-cta" href="#contact">Get in Touch</a>
   </div>
@@ -107,46 +110,41 @@
     <div class="hero-right">
       <div class="bento" aria-hidden="true">
         <div class="bento-glow"></div>
+        <div class="bento-chip"><span class="bento-chip-dot"></span>AIMargam is live</div>
 
-        <!-- Core panel (tall, left) -->
+        <!-- Core card — left col -->
         <div class="bcard bcard-core">
           <div class="bcard-top">
             <span class="bdot"></span>
             <span class="bcard-kicker">AI CORE</span>
+            <span class="bcard-live-tag">LIVE</span>
           </div>
           <div class="bcore-num">20<span>services<br />deployed</span></div>
           <div class="bbars">
-            <span style="--h:40%"></span>
-            <span style="--h:66%"></span>
-            <span style="--h:52%"></span>
-            <span style="--h:84%"></span>
-            <span style="--h:70%"></span>
-            <span style="--h:96%"></span>
+            <span style="--h:40%;--d:0s"></span>
+            <span style="--h:66%;--d:.15s"></span>
+            <span style="--h:52%;--d:.3s"></span>
+            <span style="--h:84%;--d:.45s"></span>
+            <span style="--h:70%;--d:.6s"></span>
+            <span style="--h:96%;--d:.75s"></span>
           </div>
         </div>
 
-        <!-- Stat: domains -->
-        <div class="bcard bstat bstat-a">
-          <span class="bstat-k">Expertise</span>
-          <span class="bstat-v">6<small>domains</small></span>
-        </div>
-
-        <!-- Stat: focus -->
-        <div class="bcard bstat bstat-b">
-          <span class="blive"><span class="blive-dot"></span>LIVE</span>
-          <span class="bstat-v2">ROI-first</span>
-        </div>
-
-        <!-- Chat card (full) -->
+        <!-- Chat card — right col, tilted -->
         <div class="bcard bcard-chat">
-          <div class="bchat-q">Where's our highest AI ROI?</div>
+          <div class="bchat-label">Ask AI</div>
+          <div class="bchat-q">Where's our<br />highest AI ROI?</div>
+          <div class="bchat-divider"></div>
           <div class="bchat-a">
             <span class="ba-ic">A</span>
-            <span class="ba-txt">Mapping your workflows<span class="caret"></span></span>
+            <div class="ba-content">
+              <span class="ba-name">AIMargam</span>
+              <span class="ba-txt">Mapping your workflows<span class="caret"></span></span>
+            </div>
           </div>
         </div>
 
-        <!-- Domain pills (full) -->
+        <!-- Domain pills — full width -->
         <div class="bcard bcard-pills">
           <span class="pill">Strategy</span>
           <span class="pill">Automation</span>
@@ -239,6 +237,32 @@
     </div>
   </section>
 
+  <!-- ═══ APPROACH ═══ -->
+  <section class="approach" id="approach">
+    <div class="w">
+      <div class="sec-label r">How we work</div>
+      <h2 class="sec-h r">A clear path from<br /><em>ambition to outcome.</em></h2>
+
+      <div class="step-grid">
+        <div class="step r">
+          <div class="step-top"><span class="step-n">01</span><span class="step-tag">Explore</span></div>
+          <h3>Find the highest-ROI opportunities</h3>
+          <p>We assess your readiness, map your workflows, and pinpoint exactly where AI moves the needle — before a single line of code is written.</p>
+        </div>
+        <div class="step r" data-d="1">
+          <div class="step-top"><span class="step-n">02</span><span class="step-tag">Transform</span></div>
+          <h3>Build, integrate, and deploy</h3>
+          <p>From automation to analytics to industrial AI, we ship solutions that fit how your teams already work — not the other way around.</p>
+        </div>
+        <div class="step r" data-d="2">
+          <div class="step-top"><span class="step-n">03</span><span class="step-tag">Succeed</span></div>
+          <h3>Measure, upskill, and scale</h3>
+          <p>We train your people and track the results, so the value keeps compounding long after we hand over the keys.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══ CONTACT ═══ -->
   <section class="contact" id="contact">
     <div class="w">
@@ -270,7 +294,7 @@
             <div class="ci-ic"><svg><use href="#i-globe"/></svg></div>
             <div>
               <span class="ci-lbl">Website</span>
-              <div class="ci-val">www.aimargam.com</div>
+              <div class="ci-val"><a href="https://www.aimargam.com" target="_blank" rel="noopener">www.aimargam.com</a></div>
             </div>
           </div>
         </div>
@@ -282,7 +306,7 @@
   <footer class="footer">
     <div class="w footer-row">
       <div class="footer-brand">
-        <img src="assets/aimargam-logo.jpeg" alt="AIMargam" width="45" height="32" loading="lazy" decoding="async" />
+        <img src="assets/aimargam-mark.png" alt="AIMargam" width="32" height="27" loading="lazy" decoding="async" />
         <span>AIMargam Private Limited</span>
       </div>
       <span>© 2026 AIMargam Private Limited. All rights reserved.</span>
